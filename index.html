@@ -77,7 +77,7 @@
             <h1>
               I'm
               <span>
-                <span id="typetext">Surendhar</span> <br />
+                <span id="typetext">Surendhar </span> <br />
                 N D</span
               >
             </h1>
@@ -121,13 +121,13 @@
                   36,Periya Kattu Thottam,Nalligoundanur,Kavindapadi.</span
                 >
               </p>
-              <p><strong>Zip Code:</strong> <span>638455</span></p>
+              <p><strong>Pin Code:</strong> <span>638455</span></p>
               <p>
                 <strong>Email:</strong> <span>ndsurendhar2004@gmail.com</span>
               </p>
               <p><strong>Phone:</strong> <span>+911234567650 </span></p>
             </div>
-            <a class="btn about-btn">DOWNLOAD CV</a>
+            <a class="btn about-btn" href="/resume.pdf">DOWNLOAD CV</a>
           </div>
         </div>
       </div>
@@ -277,11 +277,11 @@
                   Student Tasks.
                 </p>
                 <a
-                  href="#"
+                  href="https://surendhar-23.github.io/StudentTaskMarker"
                   class="button button--flex button--small projects__button btn"
                 >
                   View
-                  <i class="uil uil-arrow-right button__icon"></i>
+                  <i class="uil uil-arrow-right button__icon">&downarrow;</i>
                 </a>
               </div>
             </div>
@@ -298,11 +298,11 @@
                   Agricultural Goods.
                 </p>
                 <a
-                  href="#"
+                  href="https://surendhar-23.github.io/Agri_V1"
                   class="button button--flex button--small projects__button btn"
                 >
                   View
-                  <i class="uil uil-arrow-right button__icon"></i>
+                  <i class="uil uil-arrow-right button__icon">&downarrow; </i>
                 </a>
               </div>
             </div>
@@ -521,7 +521,8 @@
       let swiperprojects = new Swiper(".projects__container", {
         cssMode: true,
         loop: true,
-
+        slidesPerView: 1,
+        spaceBetween: 30,
         navigation: {
           nextEl: ".swiper-button-next",
           prevEl: ".swiper-button-prev",
@@ -531,7 +532,9 @@
           el: ".swiper-pagination",
           clickable: true,
         },
-
+        autoplay: {
+          delay: 5000,
+        },
         /* mousewheel: true,
   keyboard: true, */
       });
@@ -550,7 +553,8 @@
       //   },
       // });
     </script>
-    <script src="https://unpkg.com/scrollreveal"></script>
+    <!-- <script src="https://unpkg.com/scrollreveal"></script> -->
+    <script src="scrollreveal.js"></script>
     <script src="script.js"></script>
   </body>
 </html>

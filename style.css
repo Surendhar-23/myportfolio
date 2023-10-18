@@ -175,18 +175,23 @@ section {
 .content h1 span {
   /* display: inline-block; */
   color: #0ca678;
+  line-height: 1;
+  /* background-color: #000; */
 }
 
 #typetext {
   display: inline-block;
   width: 1px;
   overflow: hidden;
-  animation: typetext 4s infinite;
+  animation: typetext 4s infinite forwards;
   /* background-color: red; */
+  padding: 0;
   border-right: 5px solid #000;
+  line-height: 1;
+  transform: translateY(10px);
 }
 #typetext::after {
-  content: "ssdasd";
+  content: "  ";
   width: 50px;
   background-color: #000;
 }
@@ -195,7 +200,7 @@ section {
     width: 1px;
   }
   100% {
-    width: 350px;
+    width: 355px;
   }
 }
 .content h3 {
@@ -627,6 +632,7 @@ section {
   column-gap: 5rem;
   align-items: center;
   grid-template-columns: repeat(2, 1fr);
+  /* background-color: yellow; */
 }
 .grid {
   display: grid;
@@ -634,19 +640,20 @@ section {
 }
 
 .projects__img {
-  width: 265px;
-  margin-bottom: 50px;
+  width: 350px;
+  height: 200px;
+  margin: 50px 0;
   border-radius: 0.5rem;
   justify-self: center;
 }
 
 .projects__title {
-  font-size: 1.625rem;
+  font-size: 3rem;
   margin-bottom: 1rem;
 }
 
 .projects__description {
-  margin-bottom: 1.25rem;
+  margin-bottom: 2rem;
 }
 
 .projects__button {
@@ -697,7 +704,7 @@ section {
 }
 
 .project__title {
-  font-size: 1.5rem;
+  font-size: 2rem;
   margin-bottom: 0.75rem;
 }
 
@@ -758,7 +765,7 @@ section {
   background-color: #0ca678;
   border-radius: 30px;
   color: #fff;
-  padding: 0.75rem 1rem 0.25rem;
+  padding: 0.75rem 2.3rem 0.25rem;
 }
 
 .contact__label {
