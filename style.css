@@ -12,7 +12,7 @@ body {
   font-family: "Poppins";
 }
 section {
-  padding-top: 60px;
+  padding-top: 100px !important;
 }
 ::selection {
   color: rgb(109, 253, 25);
@@ -57,6 +57,7 @@ section {
 
 .logo p {
   font-size: 3.5rem;
+  font-family: "Tilt Neon", sans-serif;
 }
 
 /* Navlinks */
@@ -121,9 +122,10 @@ section {
 
 /* Hero section */
 .hero-section {
-  background-color: #000;
+  background-color: #fff;
+
   height: 100vh;
-  border-bottom: 2px solid rgb(255, 13, 13);
+  /* border-bottom: 2px solid rgb(255, 13, 13); */
   width: 100%;
   display: flex;
   align-items: center;
@@ -135,6 +137,7 @@ section {
   width: 100%;
   /* width: 100%;*/
   color: #fff;
+  color: #000;
 }
 
 .smallcontainer {
@@ -173,6 +176,28 @@ section {
   /* display: inline-block; */
   color: #0ca678;
 }
+
+#typetext {
+  display: inline-block;
+  width: 1px;
+  overflow: hidden;
+  animation: typetext 4s infinite;
+  /* background-color: red; */
+  border-right: 5px solid #000;
+}
+#typetext::after {
+  content: "ssdasd";
+  width: 50px;
+  background-color: #000;
+}
+@keyframes typetext {
+  0% {
+    width: 1px;
+  }
+  100% {
+    width: 350px;
+  }
+}
 .content h3 {
   font-size: 24px;
   margin-bottom: 30px;
@@ -199,6 +224,12 @@ section {
   padding: 1rem 2rem;
   font-size: 16px;
   border-radius: 30px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.btn:hover {
+  background-color: #099268;
+  scale: 1.05;
 }
 .mainimg {
   max-width: 30rem;
@@ -216,6 +247,7 @@ section {
 .about-section {
   overflow: hidden;
   background-color: aquamarine;
+  padding: 60px 0;
   width: 100%;
 }
 .about-main-container {
@@ -230,6 +262,8 @@ section {
 .about-img {
   text-align: center;
   max-width: 45%;
+  scale: 1.1;
+  transform: translateY(-10px);
   /* background-color: red; */
 }
 .about-img img {
@@ -243,7 +277,7 @@ section {
 .about-content p {
   font-size: 2.1rem;
   line-height: 1;
-  margin-bottom: 2rem;
+  margin-bottom: 3rem;
   display: flex;
   /* display: flex; */
   /* flex-direction: column; */
@@ -260,22 +294,25 @@ section {
 }
 
 .about-btn {
+  margin-top: 40px;
+  cursor: pointer;
 }
 
 /* Skills */
 .skill-section {
   margin-bottom: 10rem;
+  padding: 80px 0;
 }
 .skill-section h2 {
   text-align: center;
   font-size: 5rem;
-  margin-bottom: 2rem;
+  margin-bottom: 6rem;
 }
 .skill-container {
   /* background-color: grey; */
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-gap: 1rem;
+  grid-gap: 3rem;
   justify-content: center;
   align-items: center;
   font-size: 1.2rem;
@@ -288,6 +325,7 @@ section {
   padding: 1rem;
   color: #ddd;
   cursor: pointer;
+  transition: 0.5s;
 }
 
 .skilltitle {
@@ -333,10 +371,25 @@ section {
   font-size: 6.4rem;
   color: #777;
 }
+.skillimg img {
+  width: 70%;
+}
 
+/* skill hover effect */
+.skillbox:hover {
+  scale: 1.06;
+  transform: translateY(-5px);
+  background-color: #fff;
+  color: #000;
+  box-shadow: 0 0 10px #bbb;
+}
+.skillbox:hover .skillimg {
+  border: solid #bbb;
+}
 /* education */
 
 .education-section {
+  padding: 70px 0;
   background-color: #eee;
   margin-bottom: 10rem;
   z-index: -2;
@@ -468,13 +521,26 @@ section {
 }
 
 /* projects */
-
-.slide-content {
+.project-section {
+  margin-bottom: 10rem;
+}
+.project-section h2 {
+  text-align: center;
+  font-size: 5rem;
+  margin-bottom: 5rem;
+}
+.moreproject {
+  margin-top: 30px;
+  text-align: center;
+}
+.morepro {
+}
+/* .slide-content {
   margin: 0 40px;
 }
 
 .card {
-  /* width: 320px; */
+  width: 320px;
   border-radius: 25px;
   background-color: #fff;
 }
@@ -547,6 +613,179 @@ section {
 
 .cardbtn {
   background-color: #265df2;
+} */
+
+.projects__container {
+  overflow: initial;
+  /* max-width: 768px; */
+  margin-left: var(--mb-1-5);
+  margin-right: var(--mb-1-5);
+}
+
+.projects__content {
+  padding: 0 1.5rem;
+  column-gap: 5rem;
+  align-items: center;
+  grid-template-columns: repeat(2, 1fr);
+}
+.grid {
+  display: grid;
+  gap: 1.5rem;
+}
+
+.projects__img {
+  width: 265px;
+  margin-bottom: 50px;
+  border-radius: 0.5rem;
+  justify-self: center;
+}
+
+.projects__title {
+  font-size: 1.625rem;
+  margin-bottom: 1rem;
+}
+
+.projects__description {
+  margin-bottom: 1.25rem;
+}
+
+.projects__button {
+  margin-top: 10px;
+  font-size: 14px;
+  padding: 6px 12px;
+}
+
+.swiper-button-prev::after,
+.swiper-button-next::after {
+  content: "";
+}
+
+.swiper-projects-icon {
+  font-size: 2rem;
+  color: green;
+}
+
+.swiper-button-prev {
+  left: -0.5rem;
+}
+
+.swiper-button-next {
+  right: -0.5rem;
+}
+
+.swiper-container-horizontal > .swiper-pagination-bullets {
+  bottom: -2.5rem;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: green;
+}
+
+.swiper-button-prev,
+.swiper-button-next,
+.swiper-pagination-bullet {
+  outline: none;
+}
+/*==================== PROJECT IN MIND ====================*/
+.project {
+  text-align: center;
+}
+
+.project__bg {
+  background-color: red;
+  padding-top: 3rem;
+}
+
+.project__title {
+  font-size: 1.5rem;
+  margin-bottom: 0.75rem;
+}
+
+.project__description {
+  margin-bottom: 1.5rem;
+}
+
+.project__title,
+.project__description {
+  color: #fff;
+}
+
+.project__img {
+  width: 232px;
+  justify-self: center;
+}
+
+/* Contact Section */
+.contact-section {
+  margin-bottom: 10rem;
+}
+.contact-section h2 {
+  text-align: center;
+  font-size: 5rem;
+  margin-bottom: 5rem;
+}
+.contact__container {
+  margin-left: auto;
+  margin-right: auto;
+  row-gap: 3rem;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.contact__information {
+  display: flex;
+  margin-bottom: 2rem;
+}
+
+.contact__icon {
+  font-size: 22px;
+  color: green;
+  margin-right: 0.75rem;
+}
+
+.contact__title {
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.contact__subtitle {
+  font-size: 14px;
+  color: #0ca678;
+}
+.contact__form {
+  width: 100%;
+}
+.contact__content {
+  background-color: #0ca678;
+  border-radius: 30px;
+  color: #fff;
+  padding: 0.75rem 1rem 0.25rem;
+}
+
+.contact__label {
+  font-size: 14px;
+  color: #eee;
+}
+
+.contact__input {
+  width: 100%;
+  background-color: var(--input-color);
+  color: var(--text-color);
+  font-family: var(--body-font);
+  font-size: 16px;
+  border: none;
+  outline: none;
+  padding: 0.25rem 0.5rem 0.5rem 0.5rem;
+}
+
+/* footer */
+footer {
+  border-bottom: 3px solid #0ca678;
+}
+footer p {
+  font-size: 14px;
+  color: #aaa;
+  padding: 5px;
+  padding-bottom: 0;
 }
 /* flexcolumn */
 
@@ -657,5 +896,11 @@ section {
     border-right: 15px solid #fff;
     border-left: 0;
     left: -15px;
+  }
+
+  /* Contact Section */
+  .contact__container {
+    row-gap: 3rem;
+    grid-template-columns: repeat(1, 1fr);
   }
 }

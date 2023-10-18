@@ -7,22 +7,33 @@
     <title>Portfolio - SURENDHAR N D</title>
     <link rel="icon" href="images/favicon.png" type="image/x-icon" />
     <link rel="stylesheet" href="style.css" />
+    <!-- Box Icons -->
     <link
       href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="swiper-bundle.min.css" />
-    <script>
-      // window.onload(console.log("hello"));
-    </script>
+    <!-- Swiper bundle -->
+    <!-- <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
+    /> -->
+    <!-- Font Style -->
     <link
       href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900"
       rel="stylesheet"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
+      href="https://fonts.googleapis.com/css2?family=Tilt+Neon&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
-    />
+    /> -->
   </head>
   <body>
     <header class="header">
@@ -36,8 +47,8 @@
             <li><a href="#about">About</a></li>
             <li><a href="#skills">Skills</a></li>
             <li><a href="#education">Education</a></li>
-            <li><a href="#">Projects</a></li>
-            <li><a href="#">Contact</a></li>
+            <li><a href="#project">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
           </ul>
           <div class="menu">
             <svg
@@ -65,8 +76,8 @@
             <h4>HELLO!</h4>
             <h1>
               I'm
-              <span
-                >Surendhar <br />
+              <span>
+                <span id="typetext">Surendhar</span> <br />
                 N D</span
               >
             </h1>
@@ -77,8 +88,8 @@
               With my skill make some inovations .
             </p>
             <div class="btns">
-              <a href="#" class="btn">Hire Me</a>
-              <a href="#" class="btn">My Works</a>
+              <a href="#contact" class="btn">Hire Me</a>
+              <a href="#project" class="btn">My Works</a>
             </div>
           </div>
           <div class="mainimg">
@@ -131,8 +142,8 @@
           <div class="skillbox">
             <div class="skilltitle">
               <div class="skillimg">
-                <i class="bx bxl-html5"></i>
-                <!-- <img src="" alt="" /> -->
+                <!-- <i class="bx bxl-html5"></i> -->
+                <img src="images/htmlicon.png" alt="" />
               </div>
               <h3>HTML</h3>
             </div>
@@ -144,8 +155,8 @@
           <div class="skillbox">
             <div class="skilltitle">
               <div class="skillimg">
-                <i class="bx bxl-css3"></i>
-                <!-- <img src="" alt="" /> -->
+                <!-- <i class="bx bxl-css3"></i> -->
+                <img src="images/css3icon.png" alt="" />
               </div>
               <h3>CSS</h3>
             </div>
@@ -157,8 +168,8 @@
           <div class="skillbox">
             <div class="skilltitle">
               <div class="skillimg">
-                <i class="bx bxl-javascript"></i>
-                <!-- <img src="" alt="" /> -->
+                <!-- <i class="bx bxl-javascript"></i> -->
+                <img src="images/jsicon.png" alt="" />
               </div>
               <h3>Java Script</h3>
             </div>
@@ -170,8 +181,8 @@
           <div class="skillbox">
             <div class="skilltitle">
               <div class="skillimg">
-                <i class="bx bxl-java"></i>
-                <img src="" alt="" />
+                <!-- <i class="bx bxl-java"></i> -->
+                <img src="images/javaicon.png" alt="" />
               </div>
               <h3>Java</h3>
             </div>
@@ -183,8 +194,8 @@
           <div class="skillbox">
             <div class="skilltitle">
               <div class="skillimg">
-                <i class="bx bxl-react"></i>
-                <img src="" alt="" />
+                <!-- <i class="bx bxl-react"></i> -->
+                <img src="images/reacticon.png" alt="" />
               </div>
               <h3>React</h3>
             </div>
@@ -196,8 +207,8 @@
           <div class="skillbox">
             <div class="skilltitle">
               <div class="skillimg">
-                <i class="bx bxl-nodejs"></i>
-                <img src="" alt="" />
+                <!-- <i class="bx bxl-nodejs"></i> -->
+                <img src="images/nodejsicon.jpg" alt="" />
               </div>
               <h3>Node JS</h3>
             </div>
@@ -248,12 +259,71 @@
       </div>
     </section>
     <!-- Projects -->
+
     <section class="project-section" id="project">
       <div class="center-container">
-        <h2 class="section-title">Projects</h2>
-        <div class="project-container swiper">
-          <div class="slide-content">
+        <h2>My Projects</h2>
+        <div class="projects__container container swiper-container">
+          <div class="swiper-wrapper">
+            <!--==================== projects 1 ====================-->
+
+            <div class="projects__content grid swiper-slide">
+              <img src="./images/project3.png" alt="" class="projects__img" />
+
+              <div class="projects_">
+                <h3 class="projects__title">Student Task Marker</h3>
+                <p class="projects__description">
+                  With my own skills and Knowledge an website build to manage
+                  Student Tasks.
+                </p>
+                <a
+                  href="#"
+                  class="button button--flex button--small projects__button btn"
+                >
+                  View
+                  <i class="uil uil-arrow-right button__icon"></i>
+                </a>
+              </div>
+            </div>
+
+            <!--==================== projects 2 ====================-->
+
+            <div class="projects__content grid swiper-slide">
+              <img src="./images/project4.png" alt="" class="projects__img" />
+
+              <div class="projects_">
+                <h3 class="projects__title">AgriBit Mart</h3>
+                <p class="projects__description">
+                  This is a Website in which user can buying and selling
+                  Agricultural Goods.
+                </p>
+                <a
+                  href="#"
+                  class="button button--flex button--small projects__button btn"
+                >
+                  View
+                  <i class="uil uil-arrow-right button__icon"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- add arrows-->
+          <div class="swiper-button-next">
+            <i class="uil uil-angle-right-b swiper-projects-icon"></i>
+          </div>
+
+          <div class="swiper-button-prev">
+            <i class="uil uil-angle-left-b swiper-projects-icon"></i>
+          </div>
+
+          <!-- Add Pagination -->
+          <div class="swiper-pagination"></div>
+        </div>
+        <!-- <div class="project-container">
+          <div class="slide-content swiper">
             <div class="card-wrapper swiper-wrapper">
+             
               <div class="card swiper-slide">
                 <div class="project-card-image">
                   <span class="overlay"> </span>
@@ -262,7 +332,7 @@
                   </div>
                 </div>
                 <div class="card-content">
-                  <h2 class="project-name">Hellooooooo</h2>
+                  <h2 class="project-name">Hellooooooo 1</h2>
                   <p class="project-description">
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                     Magni, laborum?
@@ -278,7 +348,7 @@
                   </div>
                 </div>
                 <div class="card-content">
-                  <h2 class="project-name">Hellooooooo</h2>
+                  <h2 class="project-name">Hellooooooo 2</h2>
                   <p class="project-description">
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                     Magni, laborum?
@@ -294,7 +364,7 @@
                   </div>
                 </div>
                 <div class="card-content">
-                  <h2 class="project-name">Hellooooooo</h2>
+                  <h2 class="project-name">Hellooooooo 3</h2>
                   <p class="project-description">
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                     Magni, laborum?
@@ -310,7 +380,7 @@
                   </div>
                 </div>
                 <div class="card-content">
-                  <h2 class="project-name">Hellooooooo</h2>
+                  <h2 class="project-name">Hellooooooo 4</h2>
                   <p class="project-description">
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                     Magni, laborum?
@@ -326,7 +396,7 @@
                   </div>
                 </div>
                 <div class="card-content">
-                  <h2 class="project-name">Hellooooooo</h2>
+                  <h2 class="project-name">Hellooooooo 5</h2>
                   <p class="project-description">
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                     Magni, laborum?
@@ -336,29 +406,110 @@
               </div>
             </div>
           </div>
-          <div class="swiper-button-next"></div>
-          <div class="swiper-button-prev"></div>
-          <div class="swiper-pagination"></div>
+          <div class="project-slider-control">
+            <div class="swiper-button-prev slider-arrow">
+              <ion-icon name="arrow-back-outline"></ion-icon>
+            </div>
+            <div class="swiper-button-next slider-arrow">
+              <ion-icon name="arrow-forward-outline"></ion-icon>
+            </div>
+            <div class="swiper-pagination"></div>
+          </div>
+        </div> -->
+        <div class="moreproject">
+          <a href="#" class="btn morepro">View More</a>
         </div>
       </div>
     </section>
     <!-- Contact -->
     <section class="contact-section" id="contact">
-      hello Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nesciunt
-      ratione sed recusandae ut at dolore, ipsum doloremque repellat dolorem
-      perferendis modi dignissimos molestiae reprehenderit voluptatum a corporis
-      ducimus. Hic accusamus nihil aliquam nesciunt reiciendis laborum adipisci
-      tempora error debitis velit cumque placeat corrupti enim assumenda amet
-      fuga, minima distinctio? Ut aut ipsum repellendus, quis, odio adipisci
-      nobis dolor impedit fugiat ex ab laboriosam dolorum facere maxime nulla
-      nam atque deserunt voluptas exercitationem ducimus modi dicta, explicabo
-      libero debitis. Consequatur nostrum, id pariatur quaerat, molestiae saepe
-      modi maxime facilis odio, aperiam tempora. Dolorem omnis odit, ipsa quo
-      culpa quas nisi facere.
-    </section>
+      <div class="center-container">
+        <h2 class="section-title">Contact Me</h2>
+        <div class="contact__container container grid">
+          <div>
+            <div class="contact__information">
+              <i class="bx bx-phone-call contact__icon"></i>
 
+              <div>
+                <h3 class="contact__title">Call me</h3>
+                <span class="contact__subtitle">(+91) 8248309218</span>
+              </div>
+            </div>
+
+            <div class="contact__information">
+              <i class="bx bx-envelope contact__icon"></i>
+
+              <div>
+                <h3 class="contact__title">E-mail</h3>
+                <span class="contact__subtitle">ndsurendhar2004@gmail.com</span>
+              </div>
+            </div>
+
+            <div class="contact__information">
+              <i class="bx bx-location-plus contact__icon"></i>
+
+              <div>
+                <h3 class="contact__title">Location</h3>
+                <span class="contact__subtitle">Erode, TamilNadu, India</span>
+              </div>
+            </div>
+          </div>
+
+          <form action="" class="contact__form grid">
+            <div class="contact__inputs grid">
+              <div class="contact__content">
+                <label for="" class="contact__label">Name</label>
+                <input type="text" class="contact__input" />
+              </div>
+
+              <div class="contact__content">
+                <label for="" class="contact__label">E-mail</label>
+                <input type="email" class="contact__input" />
+              </div>
+            </div>
+
+            <div class="contact__content">
+              <label for="" class="contact__label">Subject</label>
+              <input type="text" class="contact__input" />
+            </div>
+
+            <div class="contact__content">
+              <label for="" class="contact__label">Description</label>
+              <textarea
+                name=""
+                id=""
+                cols="0"
+                rows="7"
+                class="contact__input"
+              ></textarea>
+            </div>
+
+            <div>
+              <a href="#" class="button button--flex btn">
+                Send message
+                <i class="uil uil-message button__icon"></i>
+              </a>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <div>
+        <p>&copy; 2023 SURENDHAR N D All rights reserved.</p>
+      </div>
+    </footer>
+    <!-- Script -->
+    <!-- <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script> -->
     <script src="swiper-bundle.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
     <script>
       let menubtn = document.querySelector(".menu");
       let navlink = document.querySelector(".navlinks");
@@ -367,19 +518,39 @@
       });
 
       // projects
-      var swiper = new Swiper(".mySwiper", {
-        slidesPerView: 1,
-        spaceBetween: 30,
+      let swiperprojects = new Swiper(".projects__container", {
+        cssMode: true,
         loop: true,
-        pagination: {
-          el: ".swiper-pagination",
-          clickable: true,
-        },
+
         navigation: {
           nextEl: ".swiper-button-next",
           prevEl: ".swiper-button-prev",
         },
+
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+
+        /* mousewheel: true,
+  keyboard: true, */
       });
+
+      // var swiper = new Swiper(".mySwiper", {
+      //   slidesPerView: 1,
+      //   spaceBetween: 30,
+      //   loop: true,
+      //   pagination: {
+      //     el: ".swiper-pagination",
+      //     clickable: true,
+      //   },
+      //   navigation: {
+      //     nextEl: ".swiper-button-next",
+      //     prevEl: ".swiper-button-prev",
+      //   },
+      // });
     </script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="script.js"></script>
   </body>
 </html>
