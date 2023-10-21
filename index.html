@@ -13,11 +13,7 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="swiper-bundle.min.css" />
-    <!-- Swiper bundle -->
-    <!-- <link
-      rel="stylesheet"
-      href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
-    /> -->
+
     <!-- Font Style -->
     <link
       href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900"
@@ -29,11 +25,14 @@
       href="https://fonts.googleapis.com/css2?family=Tilt+Neon&display=swap"
       rel="stylesheet"
     />
-
-    <!-- <link
+    <!-- Swiper bundle -->
+    <link
       rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
-    /> -->
+      href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/10.3.1/swiper-bundle.min.css"
+      integrity="sha512-UV9ujyMxyYubOSkCa8+OGzknJ1EilA19WPimPseyMcZaGIoO8l7iNphD0Mq/0R/lNkzBH70ai3tmurxAW0M2ww=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
   </head>
   <body>
     <header class="header">
@@ -75,11 +74,10 @@
           <div class="content">
             <h4>HELLO!</h4>
             <h1>
-              I'm
-              <span>
-                <span id="typetext">Surendhar </span> <br />
-                N D</span
-              >
+              <span>I'm</span>
+              <span class="nametext">
+                <span id="typetext">Surendhar N D</span>
+              </span>
             </h1>
             <h3>A FullStack WebDeveloper</h3>
             <p>
@@ -87,6 +85,12 @@
               new skill. <br />
               With my skill make some inovations .
             </p>
+            <div class="socialmediaicons">
+              <a href="#"><i class="bx bxl-linkedin"></i></a>
+              <a href="#"><i class="bx bxl-github"></i></a>
+              <a href="#"><i class="bx bxl-whatsapp"></i></a>
+              <a href="#"><i class="bx bxl-instagram"></i></a>
+            </div>
             <div class="btns">
               <a href="#contact" class="btn">Hire Me</a>
               <a href="#project" class="btn">My Works</a>
@@ -125,7 +129,7 @@
               <p>
                 <strong>Email:</strong> <span>ndsurendhar2004@gmail.com</span>
               </p>
-              <p><strong>Phone:</strong> <span>+911234567650 </span></p>
+              <p><strong>Phone:</strong> <span>+918248309218 </span></p>
             </div>
             <a class="btn about-btn" href="/resume.pdf">DOWNLOAD CV</a>
           </div>
@@ -218,6 +222,9 @@
             </p> -->
           </div>
         </div>
+        <div class="moreskills">
+          <a class="btn">View More</a>
+        </div>
       </div>
     </section>
     <!-- Education -->
@@ -263,159 +270,148 @@
     <section class="project-section" id="project">
       <div class="center-container">
         <h2>My Projects</h2>
-        <div class="projects__container container swiper-container">
-          <div class="swiper-wrapper">
-            <!--==================== projects 1 ====================-->
 
-            <div class="projects__content grid swiper-slide">
-              <img src="./images/project3.png" alt="" class="projects__img" />
-
-              <div class="projects_">
-                <h3 class="projects__title">Student Task Marker</h3>
-                <p class="projects__description">
-                  With my own skills and Knowledge an website build to manage
-                  Student Tasks.
-                </p>
-                <a
-                  href="https://surendhar-23.github.io/StudentTaskMarker"
-                  class="button button--flex button--small projects__button btn"
-                >
-                  View
-                  <i class="uil uil-arrow-right button__icon">&downarrow;</i>
-                </a>
-              </div>
-            </div>
-
-            <!--==================== projects 2 ====================-->
-
-            <div class="projects__content grid swiper-slide">
-              <img src="./images/project4.png" alt="" class="projects__img" />
-
-              <div class="projects_">
-                <h3 class="projects__title">AgriBit Mart</h3>
-                <p class="projects__description">
-                  This is a Website in which user can buying and selling
-                  Agricultural Goods.
-                </p>
-                <a
-                  href="https://surendhar-23.github.io/Agri_V1"
-                  class="button button--flex button--small projects__button btn"
-                >
-                  View
-                  <i class="uil uil-arrow-right button__icon">&downarrow; </i>
-                </a>
-              </div>
-            </div>
-          </div>
-
-          <!-- add arrows-->
-          <div class="swiper-button-next">
-            <i class="uil uil-angle-right-b swiper-projects-icon"></i>
-          </div>
-
-          <div class="swiper-button-prev">
-            <i class="uil uil-angle-left-b swiper-projects-icon"></i>
-          </div>
-
-          <!-- Add Pagination -->
-          <div class="swiper-pagination"></div>
-        </div>
-        <!-- <div class="project-container">
-          <div class="slide-content swiper">
-            <div class="card-wrapper swiper-wrapper">
-             
-              <div class="card swiper-slide">
-                <div class="project-card-image">
-                  <span class="overlay"> </span>
-                  <div class="card-image">
-                    <img src="images/main.png" alt="" />
+        <div class="project-container">
+          <div class="swiper">
+            <div class="swiper-wrapper">
+              <!-- Project 1 -->
+              <div class="swiper-slide">
+                <div class="project project1">
+                  <img
+                    src="./images/p/project1.png"
+                    alt=""
+                    class="projects__img"
+                  />
+                  <div class="projects_">
+                    <h3 class="projects__title">Student Task Marker</h3>
+                    <p class="projects__description">
+                      With my own skills and Knowledge an website build to
+                      manage Student Tasks.
+                    </p>
+                    <a
+                      href="https://surendhar-23.github.io/StudentTaskMarker"
+                      class="button button--flex button--small projects__button btn"
+                    >
+                      View
+                      <i class="uil uil-arrow-right button__icon"
+                        >&downarrow;</i
+                      >
+                    </a>
                   </div>
                 </div>
-                <div class="card-content">
-                  <h2 class="project-name">Hellooooooo 1</h2>
-                  <p class="project-description">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                    Magni, laborum?
-                  </p>
-                  <a href="#" class="btn cardbtn">View More</a>
-                </div>
               </div>
-              <div class="card swiper-slide">
-                <div class="project-card-image">
-                  <span class="overlay"> </span>
-                  <div class="card-image">
-                    <img src="images/main.png" alt="" />
+              <!-- Project 2 -->
+              <div class="swiper-slide">
+                <div class="project project2">
+                  <img
+                    src="./images/projects/project2.png"
+                    alt=""
+                    class="projects__img"
+                  />
+                  <div class="projects_">
+                    <h3 class="projects__title">AgriBit Mart</h3>
+                    <p class="projects__description">
+                      This is a Website in which user can buying and selling
+                      Agricultural Goods.
+                    </p>
+                    <a
+                      href="https://surendhar-23.github.io/Agri_V1"
+                      class="button button--flex button--small projects__button btn"
+                    >
+                      View
+                      <i class="uil uil-arrow-right button__icon"
+                        >&downarrow;
+                      </i>
+                    </a>
                   </div>
                 </div>
-                <div class="card-content">
-                  <h2 class="project-name">Hellooooooo 2</h2>
-                  <p class="project-description">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                    Magni, laborum?
-                  </p>
-                  <a href="#" class="btn cardbtn">View More</a>
-                </div>
               </div>
-              <div class="card swiper-slide">
-                <div class="project-card-image">
-                  <span class="overlay"> </span>
-                  <div class="card-image">
-                    <img src="images/main.png" alt="" />
+              <!-- Project 3 -->
+              <div class="swiper-slide">
+                <div class="project project1">
+                  <img
+                    src="./images/projects/project3.png"
+                    alt=""
+                    class="projects__img"
+                  />
+                  <div class="projects_">
+                    <h3 class="projects__title">Student Task Marker</h3>
+                    <p class="projects__description">
+                      With my own skills and Knowledge an website build to
+                      manage Student Tasks.
+                    </p>
+                    <a
+                      href="https://surendhar-23.github.io/StudentTaskMarker"
+                      class="button button--flex button--small projects__button btn"
+                    >
+                      View
+                      <i class="uil uil-arrow-right button__icon"
+                        >&downarrow;</i
+                      >
+                    </a>
                   </div>
                 </div>
-                <div class="card-content">
-                  <h2 class="project-name">Hellooooooo 3</h2>
-                  <p class="project-description">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                    Magni, laborum?
-                  </p>
-                  <a href="#" class="btn cardbtn">View More</a>
-                </div>
               </div>
-              <div class="card swiper-slide">
-                <div class="project-card-image">
-                  <span class="overlay"> </span>
-                  <div class="card-image">
-                    <img src="images/main.png" alt="" />
+              <!-- Project 4 -->
+              <div class="swiper-slide">
+                <div class="project project1">
+                  <img
+                    src="./images/projects/project4.png"
+                    alt=""
+                    class="projects__img"
+                  />
+                  <div class="projects_">
+                    <h3 class="projects__title">Student Task Marker</h3>
+                    <p class="projects__description">
+                      With my own skills and Knowledge an website build to
+                      manage Student Tasks.
+                    </p>
+                    <a
+                      href="https://surendhar-23.github.io/StudentTaskMarker"
+                      class="button button--flex button--small projects__button btn"
+                    >
+                      View
+                      <i class="uil uil-arrow-right button__icon"
+                        >&downarrow;</i
+                      >
+                    </a>
                   </div>
                 </div>
-                <div class="card-content">
-                  <h2 class="project-name">Hellooooooo 4</h2>
-                  <p class="project-description">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                    Magni, laborum?
-                  </p>
-                  <a href="#" class="btn cardbtn">View More</a>
-                </div>
               </div>
-              <div class="card swiper-slide">
-                <div class="project-card-image">
-                  <span class="overlay"> </span>
-                  <div class="card-image">
-                    <img src="images/main.png" alt="" />
+              <!-- Project 5 -->
+              <div class="swiper-slide">
+                <div class="project project1">
+                  <img
+                    src="./images/projects/project5.png"
+                    alt=""
+                    class="projects__img"
+                  />
+                  <div class="projects_">
+                    <h3 class="projects__title">Student Task Marker</h3>
+                    <p class="projects__description">
+                      With my own skills and Knowledge an website build to
+                      manage Student Tasks.
+                    </p>
+                    <a
+                      href="https://surendhar-23.github.io/StudentTaskMarker"
+                      class="button button--flex button--small projects__button btn"
+                    >
+                      View
+                      <i class="uil uil-arrow-right button__icon"
+                        >&downarrow;</i
+                      >
+                    </a>
                   </div>
                 </div>
-                <div class="card-content">
-                  <h2 class="project-name">Hellooooooo 5</h2>
-                  <p class="project-description">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                    Magni, laborum?
-                  </p>
-                  <a href="#" class="btn cardbtn">View More</a>
-                </div>
               </div>
-            </div>
-          </div>
-          <div class="project-slider-control">
-            <div class="swiper-button-prev slider-arrow">
-              <ion-icon name="arrow-back-outline"></ion-icon>
-            </div>
-            <div class="swiper-button-next slider-arrow">
-              <ion-icon name="arrow-forward-outline"></ion-icon>
+              <!-- ... -->
             </div>
             <div class="swiper-pagination"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+            <!-- <div class="swiper-scrollbar"></div> -->
           </div>
-        </div> -->
+        </div>
         <div class="moreproject">
           <a href="#" class="btn morepro">View More</a>
         </div>
@@ -509,7 +505,13 @@
       src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
     ></script>
     <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script> -->
-    <script src="swiper-bundle.min.js"></script>
+    <!-- <script src="swiper-bundle.min.js"></script> -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/10.3.1/swiper-bundle.min.js"
+      integrity="sha512-2w85qGM9apXW9EgevsY4S4fnJIUz6U6mXlLbgDKphBuwh7jPQNad70Ll5W+pcIrJ6rIMGpjP0CxYGQwKsynIaQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
     <script>
       let menubtn = document.querySelector(".menu");
       let navlink = document.querySelector(".navlinks");
@@ -518,11 +520,38 @@
       });
 
       // projects
-      let swiperprojects = new Swiper(".projects__container", {
+      let swiperprojects = new Swiper(".swiper", {
         cssMode: true,
         loop: true,
         slidesPerView: 1,
         spaceBetween: 30,
+        keyboard: {
+          enabled: true,
+          onlyInViewport: false,
+        },
+        // effect: flip,
+        // flipEffect: {
+        //   slideShadows: false,
+        // },
+        // breakpoints: {
+        //   // when window width is >= 320px
+        //   320: {
+        //     slidesPerView: 1,
+        //     spaceBetween: 0,
+        //   },
+        //   // when window width is >= 480px
+        //   480: {
+        //     slidesPerView: 2,
+        //     spaceBetween: 10,
+        //   },
+        //   // when window width is >= 640px
+        //   640: {
+        //     slidesPerView: 3,
+        //     spaceBetween: 20,
+        //   },
+        // },
+        // slidesPerGroup: 2,
+        speed: 300,
         navigation: {
           nextEl: ".swiper-button-next",
           prevEl: ".swiper-button-prev",
@@ -532,11 +561,11 @@
           el: ".swiper-pagination",
           clickable: true,
         },
-        autoplay: {
-          delay: 5000,
-        },
+        // autoplay: {
+        //   delay: 5000,
+        // },
         /* mousewheel: true,
-  keyboard: true, */
+      keyboard: true, */
       });
 
       // var swiper = new Swiper(".mySwiper", {

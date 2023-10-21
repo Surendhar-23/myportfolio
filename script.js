@@ -1,15 +1,25 @@
-let displaypercent = function (element, value) {
-  let counter = 0;
-  return function () {
-    if (counter == value) {
-      clearInterval(intervalId);
-    } else {
-      counter += 1;
-      element.innerHTML = counter + "%";
-    }
-  };
-};
+"use strict";
 
+// Skills
+let moreskills = document.querySelector(".moreskills");
+let skillboxes = [...document.querySelectorAll(".skillbox")];
+let skillssize = 0;
+for (let i = 0; i < skillboxes.length; i++) {
+  let computedStyle = window.getComputedStyle(skillboxes[i]);
+  if (computedStyle.getPropertyValue("display") == "block") {
+    skillssize++;
+  }
+}
+moreskills.addEventListener("click", () => {
+  for (let i = skillssize; i < skillssize + 3; i++) {
+    if (skillboxes.length <= i) break;
+    skillboxes[i].style.display = "block";
+  }
+  skillssize += 3;
+  if (skillboxes.length <= skillssize) moreskills.style.display = "none";
+});
+
+// Scroll Reveal
 const sr = ScrollReveal({
   origin: "top",
   distance: "60px",
