@@ -523,7 +523,11 @@
       menubtn.addEventListener("click", () => {
         navlink.classList.toggle("disnavlinks");
       });
+      let navlinks = document.querySelectorAll(".navlinks li a");
 
+      navlinks.forEach((e) => {
+        e.onclick = () => navlink.classList.remove("disnavlinks");
+      });
       // projects
       let swiperprojects = new Swiper(".swiper", {
         cssMode: true,

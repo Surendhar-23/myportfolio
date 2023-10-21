@@ -181,7 +181,7 @@ section {
 }
 
 .disnavlinks {
-  height: 28rem !important;
+  height: 32rem !important;
   padding: 20px 15px;
 }
 
@@ -601,6 +601,7 @@ span {
 /* projects */
 .project-section {
   margin-bottom: 10rem;
+  padding-bottom: 6rem;
 }
 .project-section h2 {
   text-align: center;
@@ -815,7 +816,8 @@ footer p {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    background-color: rgba(255, 255, 255, 0.8);
+    /* background-color: rgba(255, 255, 255, 0.8); */
+    background-color: rgba(230, 252, 245, 0.8);
     padding: 10px;
     border-radius: 5px;
     z-index: 1;

@@ -1,7 +1,7 @@
 "use strict";
 // preloader
 window.onload = function () {
-  // document.querySelector(".preloader").style.display = "none";
+  document.querySelector(".preloader").style.display = "none";
 };
 
 // Skills
