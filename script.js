@@ -1,4 +1,8 @@
 "use strict";
+// preloader
+window.onload = function () {
+  // document.querySelector(".preloader").style.display = "none";
+};
 
 // Skills
 let moreskills = document.querySelector(".moreskills");
