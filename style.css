@@ -6,7 +6,8 @@
 /* Preloader */
 /*  */
 .preloader {
-  position: fixed;
+  position: absolute;
+  overflow: hidden;
   width: 100vw;
   height: 100vh;
   /* background-color: rgba(255, 255, 255, 0.511); */
@@ -284,6 +285,17 @@ span {
 .socialmediaicons {
   font-size: 3.2rem;
   margin-bottom: 20px;
+}
+.socialmediaicons a {
+  text-decoration: none;
+  color: #000;
+}
+.socialmediaicons a i {
+  color: #000;
+}
+.socialmediaicons a i:hover {
+  color: green;
+  scale: 1.05;
 }
 .btns {
   /* max-width: 300px; */
@@ -840,20 +852,6 @@ footer p {
     margin-bottom: 10px;
   }
 
-  .socialmediaicons {
-  }
-  .socialmediaicons a {
-    text-decoration: none;
-    color: #000;
-  }
-
-  .socialmediaicons a i {
-    color: #000;
-  }
-  .socialmediaicons a i:hover {
-    color: green;
-    scale: 1.05;
-  }
   .nametext {
     font-size: 42px;
     line-height: 0.8;
